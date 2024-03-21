@@ -52,10 +52,10 @@ void DijkstraAlgorithm(int Graph[MAX][MAX], int size, int start) {
 
 int main() {
   int Graph[MAX][MAX], i, j, size, source;
-
+  // declaring the size of the matrix
   size = 7;
 
-
+  // declaring the nodes of graph
   Graph[0][0] = 0;
   Graph[0][1] = 4;
   Graph[0][2] = 0;
@@ -113,7 +113,8 @@ int main() {
   Graph[6][6] = 1;
 
   source = 0;
-
+  // calling the DijkstraAlgorithm() function by passing the Graph, the number of nodes and the source node
+  DijkstraAlgorithm(Graph, size, source);
 
   return 0;
 }
